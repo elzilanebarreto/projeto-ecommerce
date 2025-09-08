@@ -16,7 +16,8 @@ export abstract class Livros {
     public get id(): number {
         return this._id;
     }
-    public set id(id: number) {
+
+    public set id(id: number){
         this._id = id;
     }
 
