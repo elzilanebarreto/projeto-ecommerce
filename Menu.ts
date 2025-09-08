@@ -14,7 +14,7 @@ export function main(){
         console.log('                                           ');
         console.log('          1 - Cadastrar Livro              ');
         console.log('          2 - Listar todos os livros       ');
-        console.log('          3 - Buscar livro pelo número     ');
+        console.log('          3 - Buscar livro pelo código     ');
         console.log('          4 - Atualizar dados de um livro  ');
         console.log('          5 - Excluir um livro             ');
         console.log('          6 - Sair                         ');
@@ -44,7 +44,7 @@ export function main(){
                 keyPress();
                 break;
             case 3:
-                console.log('\n\nBuscar livro pelo número\n\n');
+                console.log('\n\nBuscar livro pelo código\n\n');
                 
                 keyPress();
                 break;
@@ -74,7 +74,7 @@ function sobre(): void{
     console.log('\n*****************************************************');
     console.log('Projeto Desenvolvido por: ');
     console.log('Elzilane Barreto - barretoelzilane@gmail.com');
-    console.log('https://github.com/elzilanebarreto/projeto-ecommerce');
+    console.log('https://github.com/elzilanebarreto');
     console.log('*****************************************************');
 }
 
