@@ -3,8 +3,8 @@ import { Livros } from "./Livros";
 export class LivrosFisicos extends Livros{
     private _editora: string;
 
-    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number, editora: string){
-        super(id, titulo, autor, anoPublicacao, numeroPaginas);
+    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number, preco: number, editora: string){
+        super(id, titulo, autor, anoPublicacao, numeroPaginas, preco);
         this._editora = editora;
     }
 
