@@ -60,14 +60,6 @@ export abstract class Livros {
     }
 
     public visualizar(): void{
-        console.log('\n\n**************************************************');
-        console.log('                 Dados do Livro:                      ');
-        console.log('\n\n**************************************************');
-        console.log(`ID do Livro: ${this._id}`);
-        console.log(`Título do Livro: ${this._titulo}`);
-        console.log(`Autor do Livro: ${this._autor}`);
-        console.log(`Ano de Publicação do Livro: ${this._anoPublicao}`);
-        console.log(`Número de Páginas do Livro: ${this._numeroPaginas}`);
         console.log('\n\n***********************************************');
         console.log('              Dados do Livro:                  ');
         console.log('***********************************************');
