@@ -8,7 +8,7 @@ export function main(){
 
         console.log('*******************************************');
         console.log('                                           ');
-        console.log('           📚 Livraria Online             ');
+        console.log('               📚 Livraria                ');
         console.log('                                           ');
         console.log('*******************************************');
         console.log('                                           ');
