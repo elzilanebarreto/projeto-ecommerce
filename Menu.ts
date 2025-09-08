@@ -35,6 +35,7 @@ export function main(){
         switch(opcao){
             case 1: 
                 console.log('\n\nCadastrar Livro\n\n');
+                
 
                 keyPress();
                 break;
