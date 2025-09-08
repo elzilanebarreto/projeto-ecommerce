@@ -10,8 +10,8 @@ export function main(){
     let opcao: number, id: number, anoPublicacao: number, numeroPaginas: number, preco: number;
     let titulo: string, autor: string, editora: string;
 
-    let livro1: LivrosFisicos = new LivrosFisicos(livros.gerarId(), 'Harry Potter', 'JK Rowling', 1997, 352, 45.99, 'Rocco');
-    livros.cadastrar(livro1);
+    // let livro1: LivrosFisicos = new LivrosFisicos(livros.gerarId(), 'Harry Potter', 'JK Rowling', 1997, 352, 45.99, 'Rocco');
+    // livros.cadastrar(livro1);
 
     while (true){
 
