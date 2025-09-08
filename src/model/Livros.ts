@@ -4,13 +4,15 @@ export abstract class Livros {
     private _autor: string;
     private _anoPublicao: number;
     private _numeroPaginas: number;
+    private _preco: number;
 
-    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number){
+    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number, preco: number){
         this._id = id;
         this._titulo = titulo;
         this._autor = autor;
         this._anoPublicao = anoPublicacao;
         this._numeroPaginas = numeroPaginas;
+        this._preco = preco;
     }
 
     public get id(): number {
@@ -48,6 +50,13 @@ export abstract class Livros {
         this._numeroPaginas = numeroPaginas;
     }
 
+    public get preco(): number {
+        return this._preco;
+    }
+    public set preco(preco: number) {
+        this._preco = preco;
+    }
+
     public visualizar(): void{
         console.log('\n\n***********************************************');
         console.log('              Dados do Livro:                  ');
@@ -57,5 +66,6 @@ export abstract class Livros {
         console.log(`Autor: ${this._autor}`);
         console.log(`Ano de Publicação: ${this._anoPublicao}`);
         console.log(`Número de Páginas: ${this._numeroPaginas}`);
+        console.log(`Preço do Livro: ${this._preco}`);
     }
 }
