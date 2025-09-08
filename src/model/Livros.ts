@@ -15,10 +15,12 @@ export abstract class Livros {
         this._preco = preco;
     }
 
-    public get id(): number {
+    // Método get e set
+    public get id(){
         return this._id;
     }
-    public set id(id: number) {
+
+    public set id(id: number){
         this._id = id;
     }
 
