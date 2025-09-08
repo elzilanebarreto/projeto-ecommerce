@@ -4,13 +4,15 @@ export abstract class Livros {
     private _autor: string;
     private _anoPublicao: number;
     private _numeroPaginas: number;
+    private _preco: number;
 
-    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number){
+    constructor(id: number, titulo: string, autor: string, anoPublicacao: number, numeroPaginas: number, preco: number){
         this._id = id;
         this._titulo = titulo;
         this._autor = autor;
         this._anoPublicao = anoPublicacao;
         this._numeroPaginas = numeroPaginas;
+        this._preco = preco;
     }
 
     // Método get e set
@@ -50,6 +52,13 @@ export abstract class Livros {
         this._numeroPaginas = numeroPaginas;
     }
 
+    public get preco(): number {
+        return this._preco;
+    }
+    public set preco(preco: number) {
+        this._preco = preco;
+    }
+
     public visualizar(): void{
         console.log('\n\n**************************************************');
         console.log('                 Dados do Livro:                      ');
@@ -59,5 +68,14 @@ export abstract class Livros {
         console.log(`Autor do Livro: ${this._autor}`);
         console.log(`Ano de Publicação do Livro: ${this._anoPublicao}`);
         console.log(`Número de Páginas do Livro: ${this._numeroPaginas}`);
+        console.log('\n\n***********************************************');
+        console.log('              Dados do Livro:                  ');
+        console.log('***********************************************');
+        console.log(`ID do livro: ${this._id}`);
+        console.log(`Título: ${this._titulo}`);
+        console.log(`Autor: ${this._autor}`);
+        console.log(`Ano de Publicação: ${this._anoPublicao}`);
+        console.log(`Número de Páginas: ${this._numeroPaginas}`);
+        console.log(`Preço do Livro: ${this._preco}`);
     }
 }
